@@ -1,0 +1,155 @@
+body{
+	overflow: hidden;
+	margin: 0px;
+}
+.tool-layer{
+	width: 100%;
+	height: 100vh;
+}
+#owo-board {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-color: rgb(204, 247, 255);
+}
+.centered-text{
+	width: 100%;
+	text-align: center;
+}
+.align-middle{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.clickable{
+	cursor: pointer;
+}
+.palette {
+	position: absolute;
+	width: 50px;
+	height: 230px;
+	padding: 10px;
+	background-color: rgb(134, 134, 134);
+}
+.palette-tool {
+	width: 50px;
+	height: 50px;
+	margin: 0px 0px 10px 0px;
+	background-color: rgb(184, 184, 184);
+	cursor: pointer;
+}
+#selector{
+	background-image: url('pointer.png') ;
+	background-size: 100% 100%;
+}
+#draw-tool{
+	background-image: url('draw-tool.png') ;
+	background-size: 100% 100%;
+}
+#color-selector{
+	background-image: url('color.png') ;
+	background-size: 100% 100%;
+}
+.color-picker-window{
+	position: absolute;
+	top: 120px;
+	left: 70px;
+	width: 124px;
+	height: 93px;
+	padding:3px;
+	background-color: rgb(134, 134, 134);
+	display: none;
+}
+.color-option{
+	width: 25px;
+	height: 25px;
+	margin:3px;
+	background-color: rgb(184, 184, 184);
+	float: left;
+	cursor: pointer;
+}
+.width-picker-window{
+	position: absolute;
+	top: 180px;
+	left: 70px;
+	width: 109px;
+	height: 44px;
+	padding:13px;
+	background-color: rgb(134, 134, 134);
+	display: none;
+
+}
+#width-display{
+	width: 60px;
+	height: 40px;
+	border: 2px solid rgb(0, 0, 0);
+	margin-right: 13px;
+	float: left;
+	background-color: white;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+}
+.arrow-button{
+	width: 28px;
+	height: 18px;
+	border: 2px solid rgb(0, 0, 0);
+	float: left;
+	background-color: white;
+	cursor: pointer;
+}
+#width-selector{
+	background-image: url('widthSelector.png') ;
+	background-size: 60% 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: rotate(90deg);
+}
+#width-dec{
+	background-image: url('decarrow.png') ;
+	background-size: 60% 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#width-inc{
+	background-image: url('decarrow.png') ;
+	background-size: 60% 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transform: rotate(180deg);
+}
+#layer-adder{
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	cursor: pointer;
+	background-color: rgb(184, 184, 184);
+}
+#layer-deletor{
+	position: absolute;
+	border-radius: 15px;
+	width: 30px;
+	height: 30px;
+	bottom: 10px;
+	font-size: 30px;
+	cursor: pointer;
+	background-color: rgb(184, 184, 184);
+}
+#trigger-right-panel{
+	position:fixed;
+	border-radius: 15px;
+	left: calc(100% - 30px);
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	background-color: rgb(184, 184, 184);
+}
+#right-config-panel{
+	position: absolute;
+	left: 100%;
+	width: 145px;
+	height: 100vh;
+	padding-left: 5px;
+	background-color: rgb(134, 134, 134);
+}
